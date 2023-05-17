@@ -9,7 +9,6 @@ import { errors } from 'celebrate';
 import { morganConf } from '@config/logger/logger';
 import * as i18n from 'i18n';
 
-
 class App {
   public app: Application;
 
