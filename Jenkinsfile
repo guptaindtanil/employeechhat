@@ -18,9 +18,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        dir('employeechhat'){
           sh 'npm install'
-        }
       }
     }  
     stage('Deploy to AWS') {
