@@ -14,8 +14,6 @@ pipeline {
       USER_ACCESS_TOKEN_SECRET='4s@U3N@@dgD6k9CwK8^j'
       ACCESS_TOKEN_EXPIRED='3600'
   }
-  tools {nodejs "nodejs"}
-    
   stages {
     stage('Build') {
       steps {
