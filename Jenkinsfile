@@ -16,11 +16,6 @@ pipeline {
   }
   
   stages {
-    stage('Build') {
-      steps {
-          sh 'npm install'
-      }
-    }  
     stage('Deploy to AWS') {
       steps {
         sshagent(credentials: ['ssh-key']) {
