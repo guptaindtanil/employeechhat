@@ -15,11 +15,6 @@ pipeline {
       ACCESS_TOKEN_EXPIRED='3600'
   }
   stages {
-    stage('Build') {
-      steps {
-          sh 'npm install'
-      }
-    }  
     stage('Deploy to AWS') {
       steps {
         sshagent(credentials: ['ssh-key']) {
