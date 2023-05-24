@@ -18,7 +18,7 @@ pipeline {
     stage('Deploy to AWS') {
       steps {
         sshagent(credentials: ['ssh-key']) {
-            sh "ssh -o StrictHostKeyChecking=no -l ubuntu 16.16.199.187 ls"
+            sh "ssh -o StrictHostKeyChecking=no -l ubuntu 13.53.243.217 ls"
         }
       }
     }
