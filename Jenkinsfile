@@ -10,13 +10,13 @@ pipeline {
                 }
             }
         }
-        stage('Install Dependency Package') {
-            steps {
-                echo "Installing Dependency For SonarQube"
-                sh 'npm install'
-                echo "Package Isatallation Complete"
-            }
-        }
+        // stage('Install Dependency Package') {
+        //     steps {
+        //         echo "Installing Dependency For SonarQube"
+        //         sh 'npm install'
+        //         echo "Package Isatallation Complete"
+        //     }
+        // }
         stage('Run Unit Test Case') {
             
             environment {
